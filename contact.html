@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - SP Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  
+
+  <style>
+     .header-section {
+      background: url('images/contact.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+      margin-top: 20px;
+      display: block;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #a138ef;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #721fbb;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav>
+  <a href="index.html">
+  <img src="Images/Sp logo.png" alt="Website logo" />
+</a>
+  <div class="navigation">
+    <ul>
+      <i id="menu-close" class="fa-sharp fa-regular fa-circle-xmark"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#features">About us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <img id="menu-btn" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menu button" />
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="header-section">
+  <div class="header-content">
+  </div>
+</section>
+
+<!-- Contact Form -->
+<div class="contact-container">
+  <h2>Contact Us</h2>
+  <form class="contact-form" action="#" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name" />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required placeholder="Message subject" />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer>
+      <div class="footer-col">
+        <h3>SP Learning</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li><a href="course-detail.html">Web Development</a></li>
+        <li><a href="app-development.html">App Development</a></li>
+        <li><a href="data-science.html">Data Science</a></li>
+        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+      </div>
+       <div class="footer-col">
+    <h3>Help & Legal</h3>
+    <li><a href="refund-cancellation.html">Refund & Cancellation</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-of-use.html">Terms of Use</a></li>
+
+  </div>
+
+      
+
+      <div class="footer-col">
+        <h3>News Letter</h3>
+        <p>
+          Stay updated with the latest courses, expert tips, learning resources, and exclusive offers by subscribing to our newsletter. Join thousands of learners who receive regular updates directly in their inbox. We promise no spam—just valuable content to support your learning journey. Enter your email below and be the first to know what’s new on our platform!
+        </p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address" />
+          <a class="white" href="#">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©2025 All rights reserved | This templates is made by
+          Shivam Pandey
+        </p>
+        
+      </div>
+    </footer>
+
+<!-- JS -->
+<script>
+  document.getElementById("menu-btn")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.add("active");
+  });
+
+  document.getElementById("menu-close")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.remove("active");
+  });
+</script>
+
+</body>
+</html>

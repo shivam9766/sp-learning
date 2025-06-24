@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Details - Web Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    .header-section {
+      background: url('images/webdev.png') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    .header-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .course-container {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .course-container ul {
+      text-align: left;
+      margin: 20px auto;
+      padding-left: 20px;
+      max-width: 700px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: #a138ef;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    .btn-primary:hover {
+      background-color: #721fbb;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #a138ef;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html">
+  <img src="Images/Sp logo.png" alt="Website logo" />
+</a>
+  <div class="navigation">
+    <ul>
+      <i id="menu-close" class="fa-sharp fa-regular fa-circle-xmark"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <img id="menu-btn" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menu button" />
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="header-section">
+  <div class="header-content">
+    
+  </div>
+</section>
+
+<!-- Course Content -->
+<div class="course-container">
+  <h2>Course Overview</h2>
+  <p>
+    Learn to build modern, responsive websites using HTML, CSS, JavaScript, and more.
+    This course is perfect for beginners looking to start a career in web development or enhance their skills.
+  </p>
+
+  <h3>What You'll Learn</h3>
+  <ul>
+    <li>HTML5 & CSS3 from scratch</li>
+    <li>JavaScript fundamentals and DOM manipulation</li>
+    <li>Responsive design using Flexbox and Grid</li>
+    <li>Project-based learning with real-world examples</li>
+    <li>Introduction to frameworks (Bootstrap, basic React)</li>
+  </ul>
+
+  <h3>Included in This Course</h3>
+  <ul>
+    <li>Lifetime access to all lessons</li>
+    <li>Certificate of completion</li>
+    <li>Expert support from instructors</li>
+    <li>Downloadable resources and projects</li>
+  </ul>
+
+  <a class="btn-primary" href="checkout.html">Buy Now - ₹199</a><br />
+  <a class="back-link" href="index.html">← Back to Home</a>
+</div>
+
+
+<!-- Footer -->
+<footer>
+      <div class="footer-col">
+        <h3>SP Learning</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li><a href="course-detail.html">Web Development</a></li>
+        <li><a href="app-development.html">App Development</a></li>
+        <li><a href="data-science.html">Data Science</a></li>
+        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+      </div>
+       <div class="footer-col">
+    <h3>Help & Legal</h3>
+    <li><a href="refund-cancellation.html">Refund & Cancellation</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-of-use.html">Terms of Use</a></li>
+
+  </div>
+
+      
+
+      <div class="footer-col">
+        <h3>News Letter</h3>
+        <p>
+          Stay updated with the latest courses, expert tips, learning resources, and exclusive offers by subscribing to our newsletter. Join thousands of learners who receive regular updates directly in their inbox. We promise no spam—just valuable content to support your learning journey. Enter your email below and be the first to know what’s new on our platform!
+        </p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address" />
+          <a class="white" href="#">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©2025 All rights reserved | This templates is made by
+          Shivam Pandey
+        </p>
+        
+      </div>
+    </footer>
+
+<!-- Mobile menu toggle -->
+<script>
+  $("#menu-btn").click(function () {
+    $("nav .navigation ul").addClass("active");
+  });
+  $("#menu-close").click(function () {
+    $("nav .navigation ul").removeClass("active");
+  });
+</script>
+
+</body>
+</html>

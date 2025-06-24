@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - SP Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+      
+  <style>
+     .header-section {
+      background: url('images/aboutus.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .about-container h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #a138ef;
+    }
+
+    .about-container p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .about-container ul {
+      margin-left: 20px;
+    }
+
+    .about-container ul li {
+      margin-bottom: 10px;
+      list-style: disc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a href="index.html">
+  <img src="Images/Sp logo.png" alt="Website logo" />
+</a>
+  <div class="navigation">
+    <ul>
+      <i id="menu-close" class="fa-sharp fa-regular fa-circle-xmark"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <img id="menu-btn" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menu button" />
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="header-section">
+  <div class="header-content">
+  </div>
+</section>
+
+<!-- About Content -->
+<div class="about-container">
+  <h2>Our Mission</h2>
+  <p>At SP Learning, our goal is to make quality tech education accessible, affordable, and practical. We believe in project-based learning, expert mentorship, and helping students build real-world skills to succeed in today’s job market.</p>
+
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>100% online and self-paced learning</li>
+    <li>Expert-designed courses with real projects</li>
+    <li>Certificate upon course completion</li>
+    <li>Community support and guidance</li>
+    <li>Affordable pricing for all students</li>
+  </ul>
+
+  <h2>What We Offer</h2>
+  <p>We offer career-focused courses in:</p>
+  <ul>
+    <li>Web Development</li>
+    <li>App Development</li>
+    <li>Data Science</li>
+    <li>AI & Machine Learning</li>
+    <li>Cloud Computing</li>
+    <li>Full Stack Development</li>
+  </ul>
+
+  <p>Join thousands of learners who are building their future with SP Learning.</p>
+</div>
+
+<!-- Footer -->
+<footer>
+      <div class="footer-col">
+        <h3>SP Learning</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li><a href="course-detail.html">Web Development</a></li>
+        <li><a href="app-development.html">App Development</a></li>
+        <li><a href="data-science.html">Data Science</a></li>
+        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+      </div>
+       <div class="footer-col">
+    <h3>Help & Legal</h3>
+    <li><a href="refund-cancellation.html">Refund & Cancellation</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-of-use.html">Terms of Use</a></li>
+
+  </div>
+
+
+      <div class="footer-col">
+        <h3>News Letter</h3>
+        <p>
+          Stay updated with the latest courses, expert tips, learning resources, and exclusive offers by subscribing to our newsletter. Join thousands of learners who receive regular updates directly in their inbox. We promise no spam—just valuable content to support your learning journey. Enter your email below and be the first to know what’s new on our platform!
+        </p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address" />
+          <a class="white" href="#">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©2025 All rights reserved | This templates is made by
+          Shivam Pandey
+        </p>
+      
+      </div>
+    </footer>
+
+<!-- JS -->
+<script>
+  document.getElementById("menu-btn")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.add("active");
+  });
+
+  document.getElementById("menu-close")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.remove("active");
+  });
+</script>
+
+</body>
+</html>

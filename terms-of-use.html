@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terms of Use - SP Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+
+    .header-section {
+      background: url('images/us.jpeg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .header-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+    .terms-content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    .terms-content h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+    .terms-content p, .terms-content li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #444;
+    }
+    .terms-content ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav>
+  <a href="index.html">
+  <img src="Images/Sp logo.png" alt="Website logo" />
+</a>
+  <div class="navigation">
+    <ul>
+      <i id="menu-close" class="fa-sharp fa-regular fa-circle-xmark"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <img id="menu-btn" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menu button" />
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="header-section">
+  <div class="header-content">
+  </div>
+</section>
+
+<!-- Terms Content -->
+<div class="terms-content">
+  <h2>Acceptance of Terms</h2>
+  <p>By accessing and using the SP Learning platform, you agree to abide by these Terms of Use. If you do not agree, please do not use our services.</p>
+
+  <h2>User Accounts</h2>
+  <ul>
+    <li>You are responsible for maintaining the confidentiality of your account login credentials.</li>
+    <li>You must be at least 13 years old to register.</li>
+    <li>You may not use the platform for any illegal or unauthorized purpose.</li>
+  </ul>
+
+  <h2>Course Access</h2>
+  <ul>
+    <li>All course content is for personal and non-commercial use only.</li>
+    <li>You may not share, redistribute, or resell the content without written permission.</li>
+  </ul>
+
+  <h2>Refunds</h2>
+  <p>Refunds are subject to our <a href="refund-cancellation.html">Refund & Cancellation Policy</a>. No refunds are provided after certificate issuance.</p>
+
+  <h2>Intellectual Property</h2>
+  <p>All materials, trademarks, logos, and content are the intellectual property of SP Learning.</p>
+
+  <h2>Modifications</h2>
+  <p>We may update these terms at any time. Continued use of the service indicates your acceptance of the updated terms.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions about these Terms, please email: <strong>splearning@gmail.com</strong></p>
+</div>
+
+<!-- Footer -->
+<footer>
+      <div class="footer-col">
+        <h3>SP Learning</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li><a href="course-detail.html">Web Development</a></li>
+        <li><a href="app-development.html">App Development</a></li>
+        <li><a href="data-science.html">Data Science</a></li>
+        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+      </div>
+       <div class="footer-col">
+    <h3>Help & Legal</h3>
+    <li><a href="refund-cancellation.html">Refund & Cancellation</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-of-use.html">Terms of Use</a></li>
+
+  </div>
+
+      
+
+      <div class="footer-col">
+        <h3>News Letter</h3>
+        <p>
+          Stay updated with the latest courses, expert tips, learning resources, and exclusive offers by subscribing to our newsletter. Join thousands of learners who receive regular updates directly in their inbox. We promise no spam—just valuable content to support your learning journey. Enter your email below and be the first to know what’s new on our platform!
+        </p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address" />
+          <a class="white" href="#">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©2025 All rights reserved | This templates is made by
+          Shivam Pandey
+        </p>
+       
+      </div>
+    </footer>
+
+<!-- Navbar toggle -->
+<script>
+  document.getElementById("menu-btn")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.add("active");
+  });
+
+  document.getElementById("menu-close")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.remove("active");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Courses - SP Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+     .header-section {
+      background: url('images/couses.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .courses-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .course-card {
+      background: #f2e8e8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .course-card img {
+      width: 100%;
+      border-radius: 12px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .course-card h4 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .course-card .buttons a {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: #a138ef;
+      color: white;
+    }
+
+    .btn-outline {
+      border: 2px solid #a138ef;
+      color: #a138ef;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background-color: #a138ef;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a href="index.html">
+  <img src="Images/Sp logo.png" alt="Website logo" />
+</a>
+  <div class="navigation">
+    <ul>
+      <i id="menu-close" class="fa-sharp fa-regular fa-circle-xmark"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <img id="menu-btn" src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menu button" />
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="header-section">
+  <div class="header-content">
+  </div>
+</section>
+
+<!-- Courses Section -->
+<div class="courses-section">
+  <div class="courses-grid">
+
+    <!-- Course 1 -->
+    <div class="course-card">
+      <img src="images/webdev.png" alt="Web Development" />
+      <h4>Web Development</h4>
+      <p>Learn HTML, CSS, JavaScript, and frontend frameworks to build responsive websites.</p>
+      <div class="buttons">
+        <a href="checkout.html" class="btn-primary">Buy Now</a>
+        <a href="course-detail.html" class="btn-outline">Read More</a>
+      </div>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-card">
+      <img src="images/app_development.jpg" alt="App Development" />
+      <h4>App Development</h4>
+      <p>Master Android & iOS app creation using Flutter or React Native from scratch.</p>
+      <div class="buttons">
+        <a href="checkout.html" class="btn-primary">Buy Now</a>
+        <a href="app-development.html" class="btn-outline">Read More</a>
+      </div>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="course-card">
+      <img src="images/Full_Stack.png" alt="Full Stack Development" />
+      <h4>Full Stack Development</h4>
+      <p>Become a full stack web developer by mastering frontend and backend technologies.</p>
+      <div class="buttons">
+        <a href="checkout.html" class="btn-primary">Buy Now</a>
+        <a href="full-stack.html" class="btn-outline">Read More</a>
+      </div>
+    </div>
+
+    <!-- Course 4 -->
+    <div class="course-card">
+      <img src="images/data_science.jpg" alt="Data Science" />
+      <h4>Data Science</h4>
+      <p>Analyze, visualize and predict data using Python, Pandas, ML & real-world datasets.</p>
+      <div class="buttons">
+        <a href="checkout.html" class="btn-primary">Buy Now</a>
+        <a href="data-science.html" class="btn-outline">Read More</a>
+      </div>
+    </div>
+
+    <!-- Course 5 -->
+    <div class="course-card">
+      <img src="images/al.png" alt="AI & ML using Python" />
+      <h4>AI & ML using Python</h4>
+      <p>Build intelligent models and explore machine learning and AI with Python.</p>
+      <div class="buttons">
+        <a href="checkout.html" class="btn-primary">Buy Now</a>
+        <a href="ai-ml.html" class="btn-outline">Read More</a>
+      </div>
+    </div>
+
+    <!-- Course 6 -->
+    <div class="course-card">
+      <img src="images/cloud.jpg" alt="Cloud Computing" />
+      <h4>Cloud Computing</h4>
+      <p>Learn cloud fundamentals and services using AWS, Azure, and Google Cloud.</p>
+      <div class="buttons">
+        <a href="checkout.html" class="btn-primary">Buy Now</a>
+        <a href="cloud-computing.html" class="btn-outline">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+      <div class="footer-col">
+        <h3>SP Learning</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li><a href="course-detail.html">Web Development</a></li>
+        <li><a href="app-development.html">App Development</a></li>
+        <li><a href="data-science.html">Data Science</a></li>
+        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+      </div>
+       <div class="footer-col">
+    <h3>Help & Legal</h3>
+    <li><a href="refund-cancellation.html">Refund & Cancellation</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-of-use.html">Terms of Use</a></li>
+
+  </div>
+
+      
+      <div class="footer-col">
+        <h3>News Letter</h3>
+        <p>
+          Stay updated with the latest courses, expert tips, learning resources, and exclusive offers by subscribing to our newsletter. Join thousands of learners who receive regular updates directly in their inbox. We promise no spam—just valuable content to support your learning journey. Enter your email below and be the first to know what’s new on our platform!
+        </p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email Address" />
+          <a class="white" href="#">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©2025 All rights reserved | This templates is made by
+          Shivam Pandey
+        </p>
+        
+      </div>
+    </footer>
+
+<!-- JS for nav -->
+<script>
+  document.getElementById("menu-btn")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.add("active");
+  });
+
+  document.getElementById("menu-close")?.addEventListener("click", () => {
+    document.querySelector("nav .navigation ul").classList.remove("active");
+  });
+</script>
+
+</body>
+</html>
